@@ -43,8 +43,6 @@ services:
         volumes:
             - ./keystore.jks:/opt/certs/keystore.jks
             - ./truststore.jks:/opt/certs/truststore.jks
-     #       - ./shared-directory/node1/nifi.properties:/opt/nifi/nifi-current/conf/nifi.properties
-            
 
     nifi_2:
         image: apache/nifi:latest
@@ -80,7 +78,6 @@ services:
         volumes:
             - ./keystore.jks:/opt/certs/keystore.jks
             - ./truststore.jks:/opt/certs/truststore.jks
-      #      - ./shared-directory/node2/nifi.properties:/opt/nifi/nifi-current/conf/nifi.properties
 
     nginx:
         image: nginx:latest
